@@ -19,7 +19,7 @@ A simple and powerful mini static site generator that turns your Markdown conten
 
 ## 🎯 Screenshot
 
-![screenshot](./github/assets/screenshot.png)
+![screenshot](.github/assets/screenshot.png)
 
 ## 🎨 Available Themes
 
