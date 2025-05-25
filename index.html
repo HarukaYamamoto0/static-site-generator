@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Site Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚀 Static Site Generator</h1>
+        <p>Turn your markdown into a single page instantly</p>
+      </div>
+
+      <div class="main-content">
+        <div class="input-section">
+          <h2 class="section-title">Your Markdown</h2>
+          <textarea
+            class="markdown-input"
+            placeholder="# My Awesome Article
+
+Welcome to my article! Here you can write any content in **markdown**.
+
+## Sections
+
+- List of items
+- Another item
+- One more item
+
+### Code
+
+```javascript
+console.log('Hello World!');
+```
+
+> This is an inspirational quote.
+
+[Link to Google](https://google.com)
+
+---
+**Text in bold** and *text in italics*.
+
+![Sample image](https://placeholder.co/400x200/4f46e5/ffffff?text=Your+Image)"
+            id="markdownInput"
+          ></textarea>
+        </div>
+
+        <div class="output-section">
+          <h2 class="section-title">Website Preview</h2>
+          <div
+            class="preview-content markdown-content"
+            id="previewContent"
+          ></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="theme-selector">
+          <label>🎨 Theme:</label>
+          <select id="themeSelect">
+            <option value="default">Default</option>
+            <option value="dark">Dark</option>
+            <option value="minimal">Minimalist</option>
+            <option value="blog">Blog</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="generateSite">
+          📄 Generate Complete Website
+        </button>
+        <button class="btn btn-secondary" id="downloadHTML">
+          💾 Download HTML
+        </button>
+        <button class="btn btn-secondary" id="copyHTML">📋 Copy HTML</button>
+      </div>
+    </div>
+
+    <script src="./scripts.js" type="module" />
+  </body>
+</html>
